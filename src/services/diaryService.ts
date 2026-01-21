@@ -1,14 +1,17 @@
-import diaryData from '../../data/entries.json';
+import diaryData from '../../data/entries';
+import { DiaryEntry } from '../types';
 
-const getEntries = () => {
-  return diaryData;
+const diaries: DiaryEntry[] = diaryData as DiaryEntry[];
+
+const getEntries = (): DiaryEntry[] => {
+    return diaries;
 };
 
 const addDiary = () => {
-  return null;
+    return null;
 };
 
 export default {
-  getEntries,
-  addDiary
+    getEntries,
+    addDiary
 };
